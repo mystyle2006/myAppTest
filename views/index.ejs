@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RESPOND EXAMPLE</title>
+
+
+	<script src="/js/jquery-2.1.1.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body ng-app="myApp"> <!-- set module name -->
+	<div class="container">
+		<!-- menu -->
+		<div class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<span class="navbar-brand">Responsive Demo</span>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="link.html">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+					<li><a href="#">link</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- contents-->
+		<div ui-view></div> <!-- set ui-view -->
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+	<script src="/js/app.js"></script> <!-- include app.js -->
+</body>
+</html>
